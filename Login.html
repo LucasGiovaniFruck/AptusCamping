@@ -28,25 +28,34 @@
         <div class="row w-100 h-100 d-flex justify-content-center align-items-center">
             <div class="col-md-3 text-center login justify-content-center">
                 <h1 class="jasou mt-3 mb-4 fs-2">Já sou cliente:</h1>
-                <div class="input-group mb-4 justify-content-center">
+                <div class="input-group d-flex mb-4 justify-content-center">
                     <input type="text" class="inputlogin fs-4" placeholder="&nbsp; E-mail ou CPF:">
                   </div>
-                  <div class="input-group mb-4 justify-content-center">
+                  <div class="input-group mb-2 justify-content-center">
                     <input type="password" class="inputsenha fs-4" placeholder="&nbsp; Senha:">
                   </div>
-                  <button class="entrar mt-4 mb-5 fs-3">Entrar</button>
+                  <button class="entrar mt-4 mb-5 fs-4">Entrar</button>
             </div>
             <div class="col-md-2 d-flex justify-content-center align-items-center">
                 <div class="linha"></div>
             </div>
             <div class="col-md-3 cadastro text-center">
                 <h1 class="jasou mt-3 mb-4 fs-3">Quero ser cliente:</h1>
-                <button class="criarminha">Criar a minha conta</button>
+                <button class="criarminha" onclick="criarminha();">Criar a minha conta</button>
             </div>
             <div class="invisivel"></div>
         </div>
     </div>
 </main>
-    
+
+<script>
+
+    function criarminha() 
+        {
+			window.location.replace("Cadastro.html");
+		}
+
+</script>
+
 </body>
 </html>
